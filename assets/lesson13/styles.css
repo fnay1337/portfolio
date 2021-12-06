@@ -1,0 +1,123 @@
+.hover{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid darkgoldenrod;
+}
+.content{
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid darkgoldenrod;
+}
+li:hover{
+    color: darkgreen;
+    font-size: larger;
+}
+.f{
+    font-weight: 600;
+    font-style: bold;
+    text-align: center;
+    font-family: Arial;
+}
+.link{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(11, 92, 184);
+}
+.unvisited{
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(11, 92, 184);
+}
+.links{
+    font-weight: 600;
+    font-style: bold;
+    text-align: center;
+    font-family: Arial;
+}
+.before{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid darkgoldenrod; 
+}
+.befo{
+    font-weight: 600;
+    font-style: bold;
+    text-align: center;
+    font-family: Arial;
+}
+.beffore{
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(11, 92, 184);
+}
+.bef::before {
+    content: " BEFORE ELEMENT!-"; /* Добавляем после текста абзаца */
+    color: red; /* Красный цвет текста */
+    font-style: italic; /* Курсивное начертание */
+   }
+.fg{
+    font-weight: 600;
+    font-style: bold;
+    text-align: center;
+    font-family: Arial;
+}
+.after{
+    width: 40%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(11, 92, 184);
+}
+.aft::after{
+    content: " - AFTER ELEMENT!"; /* Добавляем после текста абзаца */
+    color: red; /* Красный цвет текста */
+    font-style: italic; /* Курсивное начертание */
+}
+.first:first-child {
+     color: green;
+     }
+.first:last-child {
+    color: gold;
+}
+input:not([type="submit"]) {
+    border: 1px solid rgb(0, 255, 76);
+    padding: 3px;
+   }
+.sd{
+    color: hotpink;
+}
+.text::first-letter {
+    float: left;      
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+    margin: 0.3em 0.2em 0 0;
+    padding: 0 0.2em 0.1em 0.2em;
+    border-radius: 0.1em;
+  }

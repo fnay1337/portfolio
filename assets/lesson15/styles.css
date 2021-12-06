@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+h1 , h2 , h3,h4,h5,h6{
+    margin: 0;
+}
+*::before, *::after{
+    box-sizing: border-box;
+}
+/*Container*/
+
+.header{
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-top: 30px;
+    background-color: grey;
+    border: 3px solid black;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+    margin: 0;
+}
+.nav{
+    display: flex;
+}
+.nav__a{
+    margin: 0 10px;
+    font-family: arial;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: color .4s linear;
+}
+.nav__a:hover{
+    color: #6e5888;
+}
+.header__inner{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    color: black;
+}
+.inner__text{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    color: black;
+    font-size: 14px;
+}
+.text{
+    font-size: 15px;
+    font-family: arial;
+}
+.card__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: darkgray;
+    border-radius: 2%;
+    height:max-content;
+    width: 100%;
+}
+.card{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 90px;
+    border: 2px solid black;
+}
+.header__card{
+    color: white;
+    height: 40px;
+    background-color: rgb(82, 82, 82);
+}
+.card__main{
+    background-color: #fff;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(82, 82, 82);
+}
+@media (min-width:200px) and (max-width:900px) { 
+    .container{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .header__logo{
+        font-size: 15px;
+    }
+    .nav__a{
+        font-size: 10px;
+    }
+    .text{
+        font-size: 10px;
+    }
+}

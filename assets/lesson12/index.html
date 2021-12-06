@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_ds4XncrQjzfZDmKU9xr4k');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_4xpvhml', 'template_e83bb8s', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="left">
+<div class="leftinner"></div>
+    <div class="center">
+        <div class="h1">
+        <h1>Contact us</h1>
+    </div>
+        <div class="icons">
+    <div class="cen">
+            <div class="cubes">
+                <p>F</p>
+            </div>
+            <div class="cubes">
+                <p>I</p>
+            </div>
+            <div class="cubes">
+                <p>in</p>
+            </div>
+    </div>
+        </div>
+    <div class="text">
+        <h2>or use Contact form below</h2>
+    </div>
+    <div class="form">
+    <form action="/my-handling-form-page" method="post" id="contact-form">
+        <input type="hidden" name="contact_number">
+        <ul>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="reply_to">
+          </li>
+          <li>
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone">
+          </li>
+          <p>Enter here</p>
+          <li>
+            <textarea id="msg" name="message"></textarea>
+          </li>
+
+        </ul>
+        <input type="submit" value="Send">
+      </form>
+      </div>
+      <div class="help">
+          <a href="">Need additional help?</a>
+      </div>
+    </div>
+</div>
+</body>
+</html>

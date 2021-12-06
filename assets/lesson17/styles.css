@@ -1,0 +1,43 @@
+.main{
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.card__outer{
+    margin: 100px auto;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    height:auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.price__name{
+    display: flex;
+    justify-content:space-between;
+}
+.price{
+    background: yellow;
+    border-radius: 30px;
+}
+.review{
+    color: black;
+}
+.card{
+    transition: transform .5s linear;
+}
+.card:hover{
+    transform: translate3d(10px, -10px, 0);
+
+}
+.likes{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
